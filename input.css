@@ -1,0 +1,35 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html , body{
+ height: 100%;
+ width: 100%;
+}
+
+@import "tailwindcss";
+
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
+}
+
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+
+  .ig-card {
+    @apply w-full aspect-square rounded-[30px] overflow-hidden shadow-sm
+           cursor-pointer transition hover:-translate-y-2 hover:shadow-xl;
+  }
+  .ig-card img {
+    @apply w-full h-full object-cover;
+  }

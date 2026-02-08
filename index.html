@@ -1,0 +1,1322 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STICH&INK</title>
+
+  <!-- Remix Icon CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="./logo/image.png">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="custom.css" />
+  <link href="./style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="fixed top-0 w-full bg-white border-b z-20">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+      <!-- Logo -->
+      <img src="./logo/image.png" class="w-40" alt="logo" />
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex gap-6 text-sm">
+        <li class="hover:text-green-700 cursor-pointer">
+          Products<i class="ri-arrow-drop-down-line"></i>
+        </li>
+        <li class="hover:text-green-700 cursor-pointer">
+          Solutions<i class="ri-arrow-drop-down-line"></i>
+        </li>
+        <li class="hover:text-green-700 cursor-pointer">
+          Customers<i class="ri-arrow-drop-down-line"></i>
+        </li>
+      </ul>
+
+      <!-- Right -->
+      <div class="flex items-center gap-3">
+        <!-- Search -->
+        <input class="hidden lg:block w-60 px-4 py-1 text-sm rounded-full bg-green-50 outline-none"
+          placeholder="Search" />
+
+        <!-- Button -->
+        <a href="#" class="hidden md:block px-4 py-2 bg-black text-white rounded-full text-sm">
+          Start Order
+        </a>
+
+        <!-- Menu Button -->
+        <button id="menu-btn" class="md:hidden border p-2 rounded">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 py-4 space-y-3 border-t">
+      <a href="#">Products</a>
+      <a href="#">Solutions</a>
+      <a href="#">Customers</a>
+
+      <input class="w-full px-4 py-2 bg-green-50 rounded-full" placeholder="Search" />
+
+      <a href="#" class="block text-center py-2 bg-black text-white rounded-full">
+        Start Order
+      </a>
+    </div>
+  </nav>
+
+  <section class="relative mt-20 py-20 px-4 text-center overflow-hidden">
+    <!-- Decorative Stars -->
+    <img src="./star/image.png" class="hidden lg:block absolute top-1/3 left-28 w-28" />
+    <img src="./star/image.png" class="hidden lg:block absolute top-1/4 left-16 w-14" />
+    <img src="./star/image.png" class="hidden lg:block absolute top-1/3 right-28 w-28" />
+    <img src="./star/image.png" class="hidden lg:block absolute top-1/2 right-16 w-14" />
+
+    <!-- Heading -->
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold max-w-4xl mx-auto leading-tight">
+      Custom Decorated Merchandise for
+      <span class="text-[#34A853]">Companies</span>
+    </h1>
+
+    <!-- Subheading -->
+    <p class="mt-6 text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+      Your One Stop Shop for Merchandise,<br />
+      Online Stores, & Warehousing Solutions.
+    </p>
+
+    <!-- CTA Buttons -->
+    <div class="mt-10 flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-10">
+      <button class="bg-[#3CB347] text-white px-6 md:px-10 py-4 rounded-full font-bold text-base sm:text-lg md:text-xl">
+        Start an Order
+      </button>
+
+      <button
+        class="border-2 border-[#34A853] text-[#34A853] px-6 md:px-10 py-4 rounded-full font-bold text-base sm:text-lg md:text-xl hover:bg-green-50 transition">
+        Schedule a Call
+      </button>
+    </div>
+  </section>
+
+  <!-- Cards Wrapper -->
+  <section>
+    <div class="max-w-7xl mx-auto py-12 md:py-20">
+      <div
+        class="flex gap-4 sm:gap-5 md:gap-6 px-4 sm:px-6 md:px-12 overflow-x-auto no-scrollbar pb-10 cursor-grab active:cursor-grabbing">
+        <!-- Card 1 -->
+        <div
+          class="bg-[#D7F6EF] min-w-[280px] sm:min-w-[320px] md:min-w-[340px] lg:min-w-[361px] h-[400px] sm:h-[450px] md:h-[500px] rounded-[30px] md:rounded-[40px] p-6 sm:p-8 md:p-10 flex flex-col relative overflow-hidden group flex-shrink-0 transition-all duration-300 hover:shadow-xl">
+          <div class="z-10 text-left">
+            <h3 class="text-2xl md:text-[32px] font-bold text-[#0D0D0D] leading-tight">
+              Merch Store
+            </h3>
+            <p class="mt-3 text-base md:text-[18px] font-medium opacity-70 leading-snug">
+              Online Stores,<br />Custom to Your Brand
+            </p>
+          </div>
+
+          <div class="mt-auto flex justify-center items-end h-full translate-y-4">
+            <img src="./slider1/image.png"
+              class="w-[270px] h-auto object-contain transform group-hover:scale-105 transition-all duration-500 ease-out"
+              alt="" />
+          </div>
+          <div
+            class="absolute bottom-8 left-8 w-14 h-14 bg-[#3CB347] rounded-full flex items-center justify-center cursor-pointer shadow-lg hover:bg-black transition-all duration-300">
+            <!-- Remix Icon -->
+            <i class="ri-arrow-right-up-line text-white text-2xl"></i>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-[#011F26] text-white min-w-[280px] sm:min-w-[320px] md:min-w-[340px] lg:min-w-[361px] h-[400px] sm:h-[450px] md:h-[500px] rounded-[30px] md:rounded-[40px] p-6 sm:p-8 md:p-10 flex flex-col relative overflow-hidden group flex-shrink-0 transition-all duration-300 hover:shadow-xl">
+          <div class="z-10 text-left">
+            <h3 class="text-2xl md:text-[32px] font-bold leading-tight">
+              Merch Bundles
+            </h3>
+            <p class="mt-3 text-base md:text-[18px] font-medium opacity-70 leading-snug">
+              Custom Merch,<br />Bundled Together.
+            </p>
+          </div>
+
+          <div class="mt-auto flex justify-center items-end h-full translate-y-4">
+            <img src="./slider1/img-2.png"
+              class="w-[260px] h-auto object-contain transform group-hover:scale-105 transition-all duration-500"
+              alt="" />
+
+          </div>
+
+          <div
+            class="absolute bottom-8 left-8 w-14 h-14 bg-[#3CB347] rounded-full flex items-center justify-center cursor-pointer shadow-lg hover:bg-black transition-all duration-300">
+            <!-- Remix Icon -->
+            <i class="ri-arrow-right-up-line text-white text-2xl"></i>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-[#E2FB52] min-w-[280px] sm:min-w-[320px] md:min-w-[340px] lg:min-w-[361px] h-[400px] sm:h-[450px] md:h-[500px] rounded-[30px] md:rounded-[40px] p-6 sm:p-8 md:p-10 flex flex-col relative overflow-hidden group flex-shrink-0 transition-all duration-300 hover:shadow-xl">
+          <div class="z-10 text-left">
+            <h3 class="text-2xl md:text-[32px] font-bold text-[#0D0D0D] leading-tight">
+              Merch Storage
+            </h3>
+            <p class="mt-3 text-base md:text-[18px] font-medium opacity-70 leading-snug">
+              Your On-Demand,<br />Warehouse & Fulfillment.
+            </p>
+          </div>
+
+          <div class="mt-auto flex justify-center items-end h-full translate-y-4">
+            <img src="./slider1/img-3.png"
+              class="w-[260px] h-auto object-contain transform group-hover:scale-105 transition-all duration-500"
+              alt="" />
+          </div>
+
+          <div
+            class="absolute bottom-8 left-8 w-14 h-14 bg-[#3CB347] rounded-full flex items-center justify-center cursor-pointer shadow-lg hover:bg-black transition-all duration-300">
+            <!-- Remix Icon -->
+            <i class="ri-arrow-right-up-line text-white text-2xl"></i>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="bg-[#477D66] text-white min-w-[280px] sm:min-w-[320px] md:min-w-[340px] lg:min-w-[361px] h-[400px] sm:h-[450px] md:h-[500px] rounded-[30px] md:rounded-[40px] p-6 sm:p-8 md:p-10 flex flex-col relative overflow-hidden group flex-shrink-0 transition-all duration-300 hover:shadow-xl">
+          <div class="z-10 text-left">
+            <h3 class="text-2xl md:text-[32px] font-bold leading-tight">
+              Bulk Merch
+            </h3>
+            <p class="mt-3 text-base md:text-[18px] font-medium opacity-70 leading-snug">
+              Order in Bulk,<br />Receive Volume Discounts.
+            </p>
+          </div>
+
+          <div class="mt-auto flex justify-center items-end h-full translate-y-4">
+            <img src="./slider1/img-4.png"
+              class="w-[250px] h-auto object-contain transform group-hover:scale-105 transition-all duration-500"
+              alt="" />
+          </div>
+          <div
+            class="absolute bottom-8 left-8 w-14 h-14 bg-[#3CB347] rounded-full flex items-center justify-center cursor-pointer shadow-lg hover:bg-black transition-all duration-300">
+            <!-- Remix Icon -->
+            <i class="ri-arrow-right-up-line text-white text-2xl"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="mt-20 sm:mt-32 w-full max-w-6xl mx-auto pb-20 px-4 sm:px-6">
+
+    <!-- Heading -->
+    <div class="text-center mb-10">
+      <h4 class="text-[18px] sm:text-[20px] md:text-[22px] font-semibold text-[#7D7F7E] uppercase tracking-widest">
+        Some Brands We Carry
+      </h4>
+    </div>
+
+    <!-- Logos -->
+    <div class="flex flex-wrap justify-center items-center gap-3 sm:gap-6 md:gap-10">
+      <!-- Repeat logos using array/map (for readability, show example in plain HTML) -->
+      <img src="./branded-logo/logo-1.png" alt="Bella+Canvas" class="w-20 sm:w-28 md:w-32 object-contain" />
+      <img src="./branded-logo/logo-2.png" alt="Nike" class="w-20 sm:w-28 md:w-32 object-contain" />
+      <img src="./branded-logo/logo-3.png" alt="Independent" class="w-20 sm:w-28 md:w-32 object-contain" />
+      <img src="./branded-logo/logo-4.png" alt="Patagonia" class="w-20 sm:w-28 md:w-32 object-contain" />
+      <img src="./branded-logo/logo-5.png" alt="American Apparel" class="w-20 sm:w-28 md:w-32 object-contain" />
+      <img src="./branded-logo/logo-6.png" alt="Columbia" class="w-20 sm:w-28 md:w-32 object-contain" />
+      <img src="./branded-logo/logo-7.png" alt="" class="w-20 sm:w-28 md:w-32 object-contain" />
+      <img src="./branded-logo/logo-8.png" alt="" class="w-20 sm:w-28 md:w-32 object-contain" />
+    </div>
+
+  </section>
+
+  <!-- Explore Brands -->
+  <section class="py-10 px-4 sm:px-6 md:px-10 bg-white">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-8">
+
+      <!-- Heading -->
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a1a1a] leading-[1.2] w-full md:w-[365px] text-left">
+        Explore Brands
+      </h2>
+
+      <!-- Scroll Buttons -->
+      <div class="bg-[#F4FBF7] p-2 rounded-full flex gap-2 overflow-x-auto no-scrollbar max-w-full">
+        <!-- Buttons Array -->
+        <button
+          class="bg-[#3CB347] text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full font-semibold text-[14px] sm:text-[16px] whitespace-nowrap flex-shrink-0">
+          All
+        </button>
+        <button
+          class="text-[#1a1a1a] px-4 sm:px-6 md:px-6 py-2 sm:py-3 rounded-full font-semibold text-[14px] sm:text-[16px] opacity-70 hover:opacity-100 whitespace-nowrap flex-shrink-0">
+          Best of Companies
+        </button>
+        <button
+          class="text-[#1a1a1a] px-4 sm:px-6 md:px-6 py-2 sm:py-3 rounded-full font-semibold text-[14px] sm:text-[16px] opacity-70 whitespace-nowrap flex-shrink-0">
+          College Favourites
+        </button>
+        <button
+          class="text-[#1a1a1a] px-4 sm:px-6 md:px-6 py-2 sm:py-3 rounded-full font-semibold text-[14px] sm:text-[16px] opacity-70 whitespace-nowrap flex-shrink-0">
+          Creators Choice
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="w-full max-w-7xl mx-auto py-10 bg-white overflow-hidden">
+
+    <div class="flex gap-6 px-4 sm:px-10 overflow-x-auto no-scrollbar pb-8 cursor-grab active:cursor-grabbing">
+
+      <!-- Card Template -->
+      <div
+        class="card w-[273px] h-[378px] rounded-[30px] relative overflow-hidden flex-shrink-0 group cursor-pointer shadow-sm hover:shadow-md transition-shadow">
+        <img src="./scroll-card/card-1 (1).png" alt="Product"
+          class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-all duration-700 ease-in-out" />
+        <div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors"></div>
+      </div>
+
+      <div
+        class="card w-[273px] h-[378px] rounded-[30px] relative overflow-hidden flex-shrink-0 group cursor-pointer shadow-sm">
+        <img src="./scroll-card/card-1 (2).png" alt="Product"
+          class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-all duration-700" />
+      </div>
+
+      <div
+        class="card w-[273px] h-[378px] rounded-[30px] relative overflow-hidden flex-shrink-0 group cursor-pointer shadow-sm">
+        <img src="./scroll-card/card-1 (3).png" alt="Product"
+          class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-all duration-700" />
+      </div>
+
+      <div
+        class="card w-[273px] h-[378px] rounded-[30px] relative overflow-hidden flex-shrink-0 group cursor-pointer shadow-sm">
+        <img src="./scroll-card/card-1 (4).png" alt="Product"
+          class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-all duration-700" />
+      </div>
+
+      <div
+        class="card w-[273px] h-[378px] rounded-[30px] relative overflow-hidden flex-shrink-0 group cursor-pointer shadow-sm">
+        <img src="./scroll-card/card-1 (5).png" alt="Product"
+          class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-all duration-700" />
+      </div>
+
+      <div
+        class="card w-[273px] h-[378px] rounded-[30px] relative overflow-hidden flex-shrink-0 group cursor-pointer shadow-sm">
+        <img src="./scroll-card/card-1 (6).png" alt="Product"
+          class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-all duration-700" />
+      </div>
+
+    </div>
+
+    <section>
+      <section class="py-16 px-4 sm:px-6 md:px-10 bg-white">
+        <!-- Heading + Buttons -->
+        <div
+          class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-6">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-[#1a1a1a]">
+            Here's How the <span class="text-[#34A853]">Process</span> Works
+          </h2>
+          <div class="flex gap-4">
+            <button class="bg-[#3CB347] text-white px-6 md:px-8 py-3 rounded-full font-bold shadow-lg shadow-green-200">
+              Start an Order
+            </button>
+            <button class="text-[#34A853] border border-[#34A853] px-6 md:px-8 py-3 rounded-full font-bold">
+              Schedule a Call
+            </button>
+          </div>
+        </div>
+
+        <!-- Cards Wrapper -->
+        <div class="flex gap-4 overflow-x-auto pb-8 no-scrollbar cursor-grab active:cursor-grabbing">
+
+          <!-- Card 01 -->
+          <div
+            class="process-card bg-[#EBF7EC] w-56 sm:w-60 md:w-64 h-80 rounded-2xl p-4 flex flex-col gap-3 relative shadow-sm flex-shrink-0 cursor-pointer shadow-sm hover:shadow-md transition-shadow">
+            <span
+              class="absolute -top-3 left-4 bg-[#D1EAD5] px-3 py-1.5 rounded-full font-bold text-sm shadow-sm">01</span>
+            <div class="mt-6 mb-2">
+              <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+                <circle cx="10" cy="14" r="6" fill="#e5eadd" />
+                <path
+                  d="M18.71 4.29c-.39-.39-1.02-.39-1.41 0L15.47 6.12l3.41 3.41 1.83-1.83c.39-.39.39-1.02 0-1.41l-2-2zM3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25z"
+                  fill="#78847d" />
+                <circle cx="10" cy="15" r="2.5" fill="#00c078" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-black text-base">Design</h3>
+            <p class="text-gray-600 text-sm leading-snug">Work with our professional design team to develop your brand
+              offering.</p>
+          </div>
+
+          <!-- Card 02 -->
+          <div
+            class="process-card bg-[#EBF7EC] w-56 sm:w-60 md:w-64 h-80 rounded-2xl p-4 flex flex-col gap-3 relative shadow-sm flex-shrink-0 cursor-pointer shadow-sm hover:shadow-md transition-shadow">
+            <span
+              class="absolute -top-3 left-4 bg-[#D1EAD5] px-3 py-1.5 rounded-full font-bold text-sm shadow-sm">02</span>
+            <div class="mt-6 mb-2">
+              <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+                <path d="M7 10L12 3L17 10V21H7V10Z" fill="#e5eadd" />
+                <path d="M12 3L4 8V12C4 12 5 15 8 16V21H16V16C19 15 20 12 20 12V8L12 3Z" stroke="#78847d"
+                  stroke-width="1.5" />
+                <circle cx="18" cy="8" r="4" fill="#00c078" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-black text-base">Product Selection</h3>
+            <p class="text-gray-600 text-sm leading-snug">Consult your account manager to curate a product offering
+              uniquely catered.</p>
+          </div>
+
+          <!-- Card 03 -->
+          <div
+            class="process-card bg-[#EBF7EC] w-56 sm:w-60 md:w-64 h-80 rounded-2xl p-4 flex flex-col gap-3 relative shadow-sm flex-shrink-0 cursor-pointer shadow-sm hover:shadow-md transition-shadow">
+            <span
+              class="absolute -top-3 left-4 bg-[#D1EAD5] px-3 py-1.5 rounded-full font-bold text-sm shadow-sm">03</span>
+            <div class="mt-6 mb-2">
+              <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="5" width="20" height="14" rx="2" fill="#e5eadd" stroke="#78847d" />
+                <path d="M14 15L17 18L20 15" fill="#00c078" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-black text-base">Order Online</h3>
+            <p class="text-gray-600 text-sm leading-snug">Launch a Merch Drop, Merch Store, or pay online for Bulk Merch
+              via an invoice.</p>
+          </div>
+
+          <!-- Card 04 -->
+          <div
+            class="process-card bg-[#EBF7EC] w-56 sm:w-60 md:w-64 h-80 rounded-2xl p-4 flex flex-col gap-3 relative shadow-sm flex-shrink-0 cursor-pointer shadow-sm hover:shadow-md transition-shadow">
+            <span
+              class="absolute -top-3 left-4 bg-[#D1EAD5] px-3 py-1.5 rounded-full font-bold text-sm shadow-sm">04</span>
+            <div class="mt-6 mb-2">
+              <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+                <path d="M3 21H21V12L17 8V12H13V8L9 4V21Z" fill="#e5eadd" />
+                <path d="M9 4V8H11V4H9Z" fill="#00c078" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-black text-base">Production</h3>
+            <p class="text-gray-600 text-sm leading-snug">Products are manufactured & ready to ship within 7-10 business
+              days.</p>
+          </div>
+
+          <!-- Card 05 -->
+          <div
+            class="process-card bg-[#EBF7EC] w-56 sm:w-60 md:w-64 h-80 rounded-2xl p-4 flex flex-col gap-3 relative shadow-sm flex-shrink-0 cursor-pointer shadow-sm hover:shadow-md transition-shadow">
+            <span
+              class="absolute -top-3 left-4 bg-[#D1EAD5] px-3 py-1.5 rounded-full font-bold text-sm shadow-sm">05</span>
+            <div class="mt-6 mb-2">
+              <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+                <path d="M3 11H15V18H3V11Z" fill="#e5eadd" />
+                <circle cx="17" cy="19" r="2" fill="#78847d" />
+                <path d="M18 13.5L20 14.5" stroke="#00c078" stroke-width="2" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-black text-base">Delivery</h3>
+            <p class="text-gray-600 text-sm leading-snug">Bulk or individual ship products anywhere around the globe.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+
+
+    </section>
+
+
+    <section class="w-full bg-[#C0E6C4] py-12 rounded-2xl">
+      <div
+        class="max-w-[1240px] mx-auto px-4 sm:px-6 md:px-10 flex flex-col md:flex-row justify-between items-center gap-6">
+
+        <!-- Text -->
+        <div class="flex flex-col">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight tracking-tighter text-[#1a1a1a]">
+            Let's <span class="text-[#3CB347]">Make</span> Your <span class="text-[#3CB347]">Merch!</span>
+          </h2>
+          <p class="text-[#1a1a1a] opacity-80 text-base sm:text-lg mt-2 font-medium">
+            Let's build your brand together!
+          </p>
+        </div>
+
+        <!-- Button -->
+        <div class="mt-6 md:mt-0">
+          <button
+            class="bg-[#3CB347] hover:bg-black text-white w-[230px] h-[71px] rounded-full font-bold text-lg flex items-center justify-center shadow-lg shadow-green-900/10 transition-all">
+            Start an Order
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="py-14 px-4 sm:px-6 md:px-10 bg-white font-sans">
+      <div class="max-w-7xl mx-auto">
+
+        <!-- Heading -->
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-10 sm:mb-12 leading-tight">
+          Fastest <span class="text-[#3CB347]">Turnaround</span><br>
+          <span class="text-[#3CB347]">Times</span> in the Industry
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+
+          <!-- Left Column: Dark Cards -->
+          <div class="flex flex-col gap-6">
+
+            <!-- Production Card -->
+            <div class="bg-[#022026] rounded-2xl p-6 sm:p-8 lg:p-10 flex flex-col gap-4">
+              <h3 class="text-white text-xl sm:text-2xl font-bold mb-4">Production</h3>
+
+              <!-- Options -->
+              <div class="flex flex-col gap-4">
+
+                <!-- Standard -->
+                <div class="bg-white/5 border border-white/10 rounded-xl p-4 sm:p-5 flex justify-between items-center">
+                  <div class="flex items-center gap-3 sm:gap-4">
+                    <img src="./icon/clock.png" class="w-8 h-8 sm:w-10 sm:h-10" alt="clock">
+                    <div>
+                      <h4 class="text-white font-bold text-sm sm:text-base">Standard</h4>
+                      <p class="text-gray-400 text-[10px] sm:text-xs">8-10 Business Days</p>
+                    </div>
+                  </div>
+                  <div class="text-right">
+                    <span
+                      class="bg-[#3CB34733] text-[#3CB347] text-[8px] sm:text-[10px] px-1.5 py-0.5 rounded font-bold">FREE</span>
+                    <p class="text-white text-[8px] sm:text-[10px] mt-1">Deliver by <span class="text-[#3CB347]">June
+                        15th</span></p>
+                  </div>
+                </div>
+
+                <!-- Rush -->
+                <div class="bg-white/5 border border-white/10 rounded-xl p-4 sm:p-5 flex justify-between items-center">
+                  <div class="flex items-center gap-3 sm:gap-4">
+                    <img src="./icon/clock.png" class="w-8 h-8 sm:w-10 sm:h-10" alt="clock">
+                    <div>
+                      <h4 class="text-white font-bold text-sm sm:text-base">Rush</h4>
+                      <p class="text-gray-400 text-[10px] sm:text-xs">5-7 Business Days</p>
+                    </div>
+                  </div>
+                  <div class="text-right">
+                    <span
+                      class="bg-[#3CB34733] text-[#3CB347] text-[8px] sm:text-[10px] px-1.5 py-0.5 rounded font-bold">Add
+                      25%</span>
+                    <p class="text-white text-[8px] sm:text-[10px] mt-1">Deliver by <span class="text-[#3CB347]">June
+                        12th</span></p>
+                  </div>
+                </div>
+
+                <!-- Lightning -->
+                <div class="bg-white/5 border border-white/10 rounded-xl p-4 sm:p-5 flex justify-between items-center">
+                  <div class="flex items-center gap-3 sm:gap-4">
+                    <img src="./icon/clock.png" class="w-8 h-8 sm:w-10 sm:h-10" alt="clock">
+                    <div>
+                      <h4 class="text-white font-bold text-sm sm:text-base">Lightning</h4>
+                      <p class="text-gray-400 text-[10px] sm:text-xs">3-5 Business Days</p>
+                    </div>
+                  </div>
+                  <div class="text-right">
+                    <span
+                      class="bg-[#3CB34733] text-[#3CB347] text-[8px] sm:text-[10px] px-1.5 py-0.5 rounded font-bold">Add
+                      50%</span>
+                    <p class="text-white text-[8px] sm:text-[10px] mt-1">Deliver by <span class="text-[#3CB347]">June
+                        8th</span></p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Colored Cards -->
+          <div class="flex flex-col gap-6">
+
+            <!-- Professional Designs -->
+            <div class="bg-[#E4FF4D] rounded-2xl p-6 sm:p-8 lg:p-10 flex flex-col justify-between min-h-[204px]">
+              <h3 class="text-[#022026] text-xl sm:text-2xl font-bold">Production</h3>
+
+              <div class="flex items-center justify-between mt-6">
+                <div class="flex items-center gap-3 sm:gap-4">
+                  <img src="./icon/Ruler Cross Pen 4.png" class="w-12 h-12 sm:w-14 sm:h-14 object-contain" alt="design">
+                  <div>
+                    <h4 class="text-[#022026] font-bold text-base sm:text-xl mb-1">Professional Designs</h4>
+                    <p class="text-[#022026cc] text-[12px] sm:text-sm italic font-medium">in 12-24 Hours</p>
+                  </div>
+                </div>
+                <span
+                  class="bg-[#3CB347] text-white text-xs sm:text-sm px-3 sm:px-4 py-1.5 rounded-full font-bold uppercase tracking-wider">
+                  FREE
+                </span>
+              </div>
+            </div>
+
+            <!-- Online Stores -->
+            <div class="bg-[#3C7A64] rounded-2xl p-6 sm:p-8 lg:p-10 flex flex-col justify-between min-h-[205px]">
+              <h3 class="text-white text-xl sm:text-2xl font-bold">Online Stores</h3>
+              <div class="flex items-center justify-between mt-6">
+                <div class="flex items-center gap-3 sm:gap-4">
+                  <img src="./icon/shop.png" class="w-10 h-10 sm:w-12 sm:h-12" alt="store">
+                  <div>
+                    <h4 class="text-white font-bold text-base sm:text-xl">Customized & Live</h4>
+                    <p class="text-white/80 text-[10px] sm:text-xs italic font-medium">in 12-24 Hours</p>
+                  </div>
+                </div>
+                <span
+                  class="bg-[#3CB347] text-white text-xs sm:text-[10px] px-2 py-1 rounded-full font-bold">FREE</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class=" py-20 px-6 md:px-20 font-sans">
+      <div class="max-w-7xl mx-auto">
+
+        <!-- Heading + Tabs -->
+        <div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a1a1a] text-center md:text-left">
+            How We <span class="text-[#3CB347]">Help</span> Our<br>Customers
+          </h2>
+
+          <div class="bg-white p-2 rounded-full shadow-sm flex items-center gap-2">
+            <button class="bg-[#3CB347] text-white px-6 py-2 rounded-full font-medium transition">Companies</button>
+            <button
+              class="text-gray-600 px-6 py-2 rounded-full font-medium hover:bg-gray-50 transition">Creators</button>
+            <button
+              class="text-gray-600 px-6 py-2 rounded-full font-medium hover:bg-gray-50 transition">Collegiate</button>
+          </div>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="bg-[#022026] rounded-[40px] overflow-hidden grid grid-cols-1 lg:grid-cols-2 shadow-2xl gap-0">
+
+          <!-- Image -->
+          <div class="p-6 lg:p-12">
+            <div class="rounded-[30px] overflow-hidden bg-white h-full">
+              <img src="./slider1/img-5.png" alt="Merch display" class="w-full h-full object-cover">
+            </div>
+          </div>
+
+          <!-- Text Content -->
+          <div class="bg-[#022026] rounded-[30px] p-6 lg:p-20 flex flex-col justify-center min-h-[541px]">
+
+            <div class="flex justify-between items-start mb-6 flex-col lg:flex-row gap-4">
+              <div>
+                <h3 class="text-white text-3xl md:text-[40px] font-bold leading-tight mb-2">Companies</h3>
+                <p class="text-gray-400 text-sm">Quality Custom Merch for Companies</p>
+              </div>
+              <button
+                class="border border-[#3CB347] text-white px-6 py-2 rounded-full hover:bg-[#3CB347] transition duration-300 text-sm font-medium">
+                Learn More
+              </button>
+            </div>
+
+            <div class="space-y-6 mt-8">
+              <!-- Feature 1 -->
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 flex items-center justify-center">
+                  <img src="./icon/Box.png" class="w-8 h-8 object-contain" alt="icon">
+                </div>
+                <p class="text-gray-300 text-base leading-relaxed">
+                  Eliminate your office merch closet & win back your time with <span
+                    class="font-semibold text-white">Merch Storage</span>
+                </p>
+              </div>
+
+              <!-- Feature 2 -->
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 flex items-center justify-center">
+                  <img src="./icon/Gift.png" class="w-8 h-8 object-contain" alt="icon">
+                </div>
+                <p class="text-gray-300 text-base leading-relaxed">
+                  Show appreciation for employees, customers, or partners with <span
+                    class="font-semibold text-white">Merch Bundles</span>
+                </p>
+              </div>
+
+              <!-- Feature 3 -->
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 flex items-center justify-center">
+                  <img src="./icon/Cart Large.png" class="w-8 h-8 object-contain" alt="icon">
+                </div>
+                <p class="text-gray-300 text-base leading-relaxed">
+                  Simplify merch purchasing & improve internal processes company-wide with a <span
+                    class="font-semibold text-white">Merch Store</span>
+                </p>
+              </div>
+
+              <!-- Feature 4 -->
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 flex items-center justify-center">
+                  <img src="./icon/Tag.png" class="w-8 h-8 object-contain" alt="icon">
+                </div>
+                <p class="text-gray-300 text-base leading-relaxed">
+                  Save money with volume discounts & ensure brand consistency with <span
+                    class="font-semibold text-white">Bulk Merch</span>
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="mt-10 py-10 px-4 bg-white overflow-hidden">
+      <div class="max-w-[1253px] mx-auto">
+        <img src="./map/map.png" alt="World map"
+          class="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] object-contain mx-auto" loading="lazy" />
+      </div>
+    </section>
+
+    <section class=" w-full py-10 px-5">
+      <div class="max-w-[1440px] mx-auto flex flex-col gap-12">
+
+        <!-- Heading + Button -->
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-6">
+          <!-- Heading -->
+          <div class="flex flex-col">
+            <h1
+              class="text-4xl sm:text-5xl md:text-[48px] font-bold text-[#1a1a1a] leading-tight md:leading-[1.1] tracking-tighter">
+              The <span class="text-[#3CB347]">Perks</span> of <br> Working with Us
+            </h1>
+            <p class="text-[#1a1a1a] opacity-80 text-base sm:text-lg mt-4">
+              Let's build your brand together!
+            </p>
+          </div>
+
+          <!-- Button -->
+          <div class="flex-shrink-0">
+            <button
+              class="bg-[#3CB347] hover:opacity-90 text-white w-full sm:w-[230px] h-[60px] sm:h-[71px] rounded-full font-bold text-lg sm:text-[20px] shadow-lg shadow-green-200 transition-all">
+              Start an Order
+            </button>
+          </div>
+        </div>
+
+
+        <!-- Perks Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- Card 1 -->
+          <div
+            class="bg-[#D7F6EF] rounded-[30px] p-8 min-h-[450px] flex flex-col shadow-sm border border-white/20 hover:-translate-y-2 hover:shadow-xl transition-all cursor-default">
+            <div class="w-12 h-12 mb-8 flex items-center justify-center">
+              <img src="./icon/Ruler Cross Pen.png" class="w-full h-full object-contain" alt="Design Services" />
+            </div>
+            <h3 class="text-[24px] font-bold text-[#1a1a1a] mb-6 leading-tight">Professional Design Services</h3>
+            <ul class="space-y-4 text-[15px] text-[#1a1a1a]/80 font-medium">
+              <li class="flex items-start gap-3">
+                <img src="./icon/checkmark-badge.png" class="w-5 h-5 mt-1" alt="Check" /> Always free, unlimited
+                revisions
+              </li>
+              <li class="flex items-start gap-3">
+                <img src="./icon/checkmark-badge.png" class="w-5 h-5 mt-1" alt="Check" /> 12-24 hour turnaround times
+              </li>
+              <li class="flex items-start gap-3">
+                <img src="./icon/checkmark-badge.png" class="w-5 h-5 mt-1" alt="Check" /> Brand review & guidance
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-[#011F26] rounded-[30px] p-8 min-h-[450px] flex flex-col text-white shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all cursor-default">
+            <div class="w-12 h-12 mb-8 flex items-center justify-center">
+              <img src="./icon/Ruler Cross Pen 3.png" class="w-full h-full object-contain" alt="Manager Icon" />
+            </div>
+            <h3 class="text-[24px] font-bold mb-6 leading-tight">Dedicated Account Manager</h3>
+            <ul class="space-y-4 text-[15px] text-white/90 font-medium">
+              <li class="flex items-start gap-3">
+                <img src="./icon/checkmark-badge.png" class="w-5 h-5 mt-1" alt="Check" /> 1-1 personalized merch
+                consultant
+              </li>
+              <li class="flex items-start gap-3">
+                <img src="./icon/checkmark-badge.png" class="w-5 h-5 mt-1" alt="Check" /> Industry expert, problem
+                solver
+              </li>
+              <li class="flex items-start gap-3">
+                <img src="./icon/checkmark-badge.png" class="w-5 h-5 mt-1" alt="Check" /> Available as needed, no extra
+                cost
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-[#E2FB52] rounded-[30px] p-8 min-h-[450px] flex flex-col shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all cursor-default">
+            <div class="w-12 h-12 mb-8 flex items-center justify-center">
+              <img src="./icon/Ruler Cross Pen 3.png" class="w-full h-full object-contain" alt="Production Icon" />
+            </div>
+            <h3 class="text-[24px] font-bold text-[#1a1a1a] mb-6 leading-tight">Production Superiority</h3>
+            <ul class="space-y-4 text-[15px] text-[#1a1a1a]/80 font-medium">
+              <li class="flex items-start gap-3">
+                <img src="./icon/checkmark-badge.png" class="w-5 h-5 mt-1" alt="Check" /> Fastest turnaround times
+              </li>
+              <li class="flex items-start gap-3">
+                <img src="./icon/checkmark-badge.png" class="w-5 h-5 mt-1" alt="Check" /> Access to thousands of SKUs
+              </li>
+              <li class="flex items-start gap-3">
+                <img src="./icon/checkmark-badge.png" class="w-5 h-5 mt-1" alt="Check" /> Worldwide fulfillment
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="bg-[#477D66] rounded-[30px] p-8 min-h-[450px] flex flex-col text-white shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all cursor-default">
+            <div class="w-12 h-12 mb-8 flex items-center justify-center">
+              <img src="./icon/Ruler Cross Pen 2.png" class="w-full h-full object-contain" alt="Pricing Icon" />
+            </div>
+            <h3 class="text-[24px] font-bold mb-6 leading-tight">Transparent Pricing</h3>
+            <ul class="space-y-4 text-[15px] text-white/90 font-medium">
+              <li class="flex items-start gap-3">
+                <img src="./icon/checkmark-badge.png" class="w-5 h-5 mt-1" alt="Check" /> No hidden costs
+              </li>
+              <li class="flex items-start gap-3">
+                <img src="./icon/checkmark-badge.png" class="w-5 h-5 mt-1" alt="Check" /> Free shipping on bulk orders
+              </li>
+              <li class="flex items-start gap-3">
+                <img src="./icon/checkmark-badge.png" class="w-5 h-5 mt-1" alt="Check" /> Guaranteed delivery dates
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="w-full py-20 bg-white">
+      <div class="text-center mb-10">
+        <h4 class="text-[20px] font-semibold text-[#7D7F7E] uppercase tracking-widest">
+          Companies We Have Worked With
+        </h4>
+      </div>
+
+      <div class="flex flex-wrap justify-center items-center gap-x-10 gap-y-10 px-6 md:px-10">
+        <img src="./branded-logo/logo-9.png" alt="Bella+Canvas"
+          class="h-8 sm:h-14 md:h-16 lg:h-20 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity">
+        <img src="./branded-logo/logo-10.png" alt="logo"
+          class="h-8 sm:h-6 md:h-10 lg:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity">
+        <img src="./branded-logo/logo-11.png" alt="logo"
+          class="h-8 sm:h-6 md:h-10 lg:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity">
+        <img src="./branded-logo/logo-12.png" alt="logo"
+          class="h-8 sm:h-6 md:h-10 lg:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity">
+        <img src="./branded-logo/logo-13.png" alt="logo"
+          class="h-8 sm:h-6 md:h-10 lg:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity">
+        <img src="./branded-logo/logo-14.png" alt="logo"
+          class="h-8 sm:h-6 md:h-10 lg:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity">
+        <img src="./branded-logo/logo-15.png" alt="logo"
+          class="h-8 sm:h-6 md:h-10 lg:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity">
+        <img src="./branded-logo/logo-16.png" alt="logo"
+          class="h-8 sm:h-6 md:h-10 lg:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity">
+        <img src="./branded-logo/logo-17.png" alt="logo"
+          class="h-8 sm:h-6 md:h-10 lg:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity">
+        <img src="./branded-logo/logo-18.png" alt="logo"
+          class="h-8 sm:h-6 md:h-10 lg:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity">
+      </div>
+    </section>
+
+    <section class="py-16 px-6 bg-white sticky top-0 z-40">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+
+        <!-- Heading -->
+        <h2 class="text-3xl md:text-[50px] font-bold text-[#1a1a1a] tracking-tight">
+          Explore Brands
+        </h2>
+
+        <!-- Tabs Wrapper -->
+        <div class="relative w-full md:w-auto">
+
+          <!-- LEFT ARROW -->
+          <div class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-[#F4FBF7] pl-2">
+            <span class="text-xl font-bold cursor-pointer select-none">‹</span>
+          </div>
+
+          <!-- Tabs -->
+          <div
+            class="flex items-center gap-2 overflow-x-auto no-scrollbar bg-[#F4FBF7] p-2 rounded-full scroll-smooth px-10">
+
+            <!-- ACTIVE TAB -->
+            <button
+              class="bg-[#3CB347] text-white px-8 py-3 rounded-full font-semibold text-sm whitespace-nowrap shadow">
+              All
+            </button>
+
+            <!-- NORMAL TABS -->
+            <button
+              class="px-6 py-3 rounded-full font-semibold text-sm text-[#1a1a1a] opacity-70 hover:opacity-100 hover:bg-white transition whitespace-nowrap">
+              Best of Companies
+            </button>
+
+            <button
+              class="px-6 py-3 rounded-full font-semibold text-sm text-[#1a1a1a] opacity-70 hover:opacity-100 hover:bg-white transition whitespace-nowrap">
+              College Favourites
+            </button>
+
+            <button
+              class="px-6 py-3 rounded-full font-semibold text-sm text-[#1a1a1a] opacity-70 hover:opacity-100 hover:bg-white transition whitespace-nowrap">
+              Creators Choice
+            </button>
+          </div>
+
+          <!-- RIGHT ARROW -->
+          <div class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-[#F4FBF7] pr-2">
+            <span class="text-xl font-bold cursor-pointer select-none">›</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-12 md:py-20 bg-white">
+      <div class="max-w-[1440px] mx-auto px-6 md:px-10">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
+
+          <div
+            class="group cursor-pointer flex flex-col bg-white p-4 rounded-[32px] transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-transparent hover:border-gray-50">
+            <div class="bg-[#F2F7F5] rounded-[24px] aspect-[4/3] flex items-center justify-center overflow-hidden mb-5">
+              <img src="./brand-img/brand1.png" alt="Cable Knit"
+                class="w-[70%] h-[70%] object-contain transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <div class="px-2">
+              <h3 class="text-[18px] font-bold text-[#1a1a1a] leading-tight mb-2">Sustainable <br> Cable Knit</h3>
+              <div class="mb-3"><span
+                  class="inline-block text-[9px] font-black px-2.5 py-1 rounded-full bg-[#EBF7EC] text-[#3CB347] uppercase tracking-wider">#SHOB</span>
+              </div>
+              <div class="h-6 flex items-center"><img src="./brand-img/brand logo 1.png" alt="Logo"
+                  class="h-5 object-contain opacity-60" /></div>
+            </div>
+          </div>
+
+          <div
+            class="group cursor-pointer flex flex-col bg-white p-4 rounded-[32px] transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-transparent hover:border-gray-50">
+            <div class="bg-[#F2F7F5] rounded-[24px] aspect-[4/3] flex items-center justify-center overflow-hidden mb-5">
+              <img src="./brand-img/brand2.png" alt="Full-Zip"
+                class="w-[70%] h-[70%] object-contain transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <div class="px-2">
+              <h3 class="text-[18px] font-bold text-[#1a1a1a] leading-tight mb-2">Heavy Blend™ Full- <br> Zip Hooded
+              </h3>
+              <div class="mb-3"><span
+                  class="inline-block text-[9px] font-black px-2.5 py-1 rounded-full bg-[#EBF7EC] text-[#3CB347] uppercase tracking-wider">#SHOB</span>
+              </div>
+              <div class="h-6 flex items-center"><img src="./brand-img/brand logo 2.png" alt="Logo"
+                  class="h-4 object-contain opacity-60" /></div>
+            </div>
+          </div>
+
+          <div
+            class="group cursor-pointer flex flex-col bg-white p-4 rounded-[32px] transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-transparent hover:border-gray-50">
+            <div class="bg-[#F2F7F5] rounded-[24px] aspect-[4/3] flex items-center justify-center overflow-hidden mb-5">
+              <img src="./brand-img/brand1.png" alt="Cable Knit"
+                class="w-[70%] h-[70%] object-contain transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <div class="px-2">
+              <h3 class="text-[18px] font-bold text-[#1a1a1a] leading-tight mb-2">Sustainable <br> Cable Knit</h3>
+              <div class="mb-3"><span
+                  class="inline-block text-[9px] font-black px-2.5 py-1 rounded-full bg-[#EBF7EC] text-[#3CB347] uppercase tracking-wider">#SHOB</span>
+              </div>
+              <div class="h-6 flex items-center"><img src="./brand-img/brand logo 1.png" alt="Logo"
+                  class="h-5 object-contain opacity-60" /></div>
+            </div>
+          </div>
+          <div
+            class="group cursor-pointer flex flex-col bg-white p-4 rounded-[32px] transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-transparent hover:border-gray-50">
+            <div class="bg-[#F2F7F5] rounded-[24px] aspect-[4/3] flex items-center justify-center overflow-hidden mb-5">
+              <img src="./brand-img/brand2.png" alt="Full-Zip"
+                class="w-[70%] h-[70%] object-contain transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <div class="px-2">
+              <h3 class="text-[18px] font-bold text-[#1a1a1a] leading-tight mb-2">Heavy Blend™ Full- <br> Zip Hooded
+              </h3>
+              <div class="mb-3"><span
+                  class="inline-block text-[9px] font-black px-2.5 py-1 rounded-full bg-[#EBF7EC] text-[#3CB347] uppercase tracking-wider">#SHOB</span>
+              </div>
+              <div class="h-6 flex items-center"><img src="./brand-img/brand logo 2.png" alt="Logo"
+                  class="h-4 object-contain opacity-60" /></div>
+            </div>
+          </div>
+          <div
+            class="group cursor-pointer flex flex-col bg-white p-4 rounded-[32px] transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-transparent hover:border-gray-50">
+            <div class="bg-[#F2F7F5] rounded-[24px] aspect-[4/3] flex items-center justify-center overflow-hidden mb-5">
+              <img src="./brand-img/brand1.png" alt="Product"
+                class="w-[70%] h-[70%] object-contain transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <div class="px-2">
+              <h3 class="text-[18px] font-bold text-[#1a1a1a] leading-tight mb-2">Sustainable <br> Cable Knit</h3>
+              <div class="mb-3"><span
+                  class="inline-block text-[9px] font-black px-2.5 py-1 rounded-full bg-[#EBF7EC] text-[#3CB347] uppercase tracking-wider">#SHOB</span>
+              </div>
+              <div class="h-6 flex items-center"><img src="./brand-img/brand logo 1.png" alt="Logo"
+                  class="h-5 object-contain opacity-60" /></div>
+            </div>
+          </div>
+          <div
+            class="group cursor-pointer flex flex-col bg-white p-4 rounded-[32px] transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-transparent hover:border-gray-50">
+            <div class="bg-[#F2F7F5] rounded-[24px] aspect-[4/3] flex items-center justify-center overflow-hidden mb-5">
+              <img src="./brand-img/brand2.png" alt="Product"
+                class="w-[70%] h-[70%] object-contain transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <div class="px-2">
+              <h3 class="text-[18px] font-bold text-[#1a1a1a] leading-tight mb-2">Heavy Blend™ Full- <br> Zip Hooded
+              </h3>
+              <div class="mb-3"><span
+                  class="inline-block text-[9px] font-black px-2.5 py-1 rounded-full bg-[#EBF7EC] text-[#3CB347] uppercase tracking-wider">#SHOB</span>
+              </div>
+              <div class="h-6 flex items-center"><img src="./brand-img/brand logo 2.png" alt="Logo"
+                  class="h-4 object-contain opacity-60" /></div>
+            </div>
+          </div>
+          <div
+            class="group cursor-pointer flex flex-col bg-white p-4 rounded-[32px] transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-transparent hover:border-gray-50">
+            <div class="bg-[#F2F7F5] rounded-[24px] aspect-[4/3] flex items-center justify-center overflow-hidden mb-5">
+              <img src="./brand-img/brand1.png" alt="Product"
+                class="w-[70%] h-[70%] object-contain transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <div class="px-2">
+              <h3 class="text-[18px] font-bold text-[#1a1a1a] leading-tight mb-2">Sustainable <br> Cable Knit</h3>
+              <div class="mb-3"><span
+                  class="inline-block text-[9px] font-black px-2.5 py-1 rounded-full bg-[#EBF7EC] text-[#3CB347] uppercase tracking-wider">#SHOB</span>
+              </div>
+              <div class="h-6 flex items-center"><img src="./brand-img/brand logo 1.png" alt="Logo"
+                  class="h-5 object-contain opacity-60" /></div>
+            </div>
+          </div>
+          <div
+            class="group cursor-pointer flex flex-col bg-white p-4 rounded-[32px] transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-transparent hover:border-gray-50">
+            <div class="bg-[#F2F7F5] rounded-[24px] aspect-[4/3] flex items-center justify-center overflow-hidden mb-5">
+              <img src="./brand-img/brand2.png" alt="Product"
+                class="w-[70%] h-[70%] object-contain transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <div class="px-2">
+              <h3 class="text-[18px] font-bold text-[#1a1a1a] leading-tight mb-2">Heavy Blend™ Full- <br> Zip Hooded
+              </h3>
+              <div class="mb-3"><span
+                  class="inline-block text-[9px] font-black px-2.5 py-1 rounded-full bg-[#EBF7EC] text-[#3CB347] uppercase tracking-wider">#SHOB</span>
+              </div>
+              <div class="h-6 flex items-center"><img src="./brand-img/brand logo 2.png" alt="Logo"
+                  class="h-4 object-contain opacity-60" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="w-full  py-16 rounded-2xl">
+
+      <div class="w-full max-w-[1440px] mx-auto px-4 md:px-10 flex flex-col items-center">
+
+        <h2 class="text-3xl md:text-[48px] font-bold text-[#1a1a1a] leading-tight text-center mb-12">
+          Check Out Some of Our <br> Recent Work on <span class="text-[#3CB347]">Instagram</span>
+        </h2>
+
+        <div class="w-full max-w-[900px] flex flex-col md:flex-row items-center justify-between mb-16 gap-6">
+          <div class="flex items-center gap-6">
+            <div class="w-20 h-20 rounded-full bg-white overflow-hidden border-2 border-white shadow-sm shrink-0">
+              <img src="./branded-logo/logo-19.png" alt="Logo" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col">
+              <span class="text-[22px] font-bold text-[#1a1a1a]">Stitchandink</span>
+              <div class="flex gap-4 text-[#1a1a1a]/60 text-sm md:text-[15px]">
+                <span><strong>135</strong> Posts</span>
+                <span><strong>6,070</strong> Followers</span>
+                <span><strong>835</strong> Following</span>
+              </div>
+            </div>
+          </div>
+          <button
+            class="bg-[#3CB347] text-white px-10 py-3 rounded-full font-bold text-[18px] hover:bg-black transition-all duration-300 shadow-lg">
+            Follow
+          </button>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 w-full">
+          <div
+            class="aspect-square bg-white rounded-[32px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <img src="./brand-img/img1.png"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+          </div>
+          <div
+            class="aspect-square bg-white rounded-[32px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <img src="./brand-img/img2.png"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+          </div>
+          <div
+            class="aspect-square bg-white rounded-[32px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <img src="./brand-img/img3.png"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+          </div>
+          <div
+            class="aspect-square bg-white rounded-[32px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <img src="./brand-img/img4.png"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+          </div>
+          <div
+            class="aspect-square bg-white rounded-[32px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <img src="./brand-img/img5.png"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+          </div>
+          <div
+            class="aspect-square bg-white rounded-[32px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <img src="./brand-img/img6.png"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+          </div>
+          <div
+            class="aspect-square bg-white rounded-[32px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <img src="./brand-img/img7.png"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+          </div>
+          <div
+            class="aspect-square bg-white rounded-[32px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <img src="./brand-img/img8.png"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="w-full bg-white py-16 md:py-24 px-4 overflow-hidden">
+      <div class="max-w-[1240px] mx-auto">
+
+        <h2 class="text-4xl md:text-[48px] font-bold text-[#1a1a1a] mb-12 tracking-tight">
+          <span class="text-[#3CB347]">Start</span> an Order
+        </h2>
+
+        <div class="flex flex-col lg:flex-row gap-12 items-stretch">
+
+          <div class="w-full lg:w-[55%] bg-white rounded-[32px] p-6 md:p-10 shadow-sm border border-gray-100">
+            <form class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="space-y-1.5">
+                  <label class="text-[13px] font-semibold text-gray-400 ml-1">Full Name</label>
+                  <input type="text" placeholder="John"
+                    class="w-full bg-[#F3FBF4] p-4 rounded-[18px] outline-none border border-transparent focus:border-[#3CB347] transition-all">
+                </div>
+                <div class="space-y-1.5">
+                  <label class="text-[13px] font-semibold text-gray-400 ml-1">Last Name</label>
+                  <input type="text" placeholder="Doe"
+                    class="w-full bg-[#F3FBF4] p-4 rounded-[18px] outline-none border border-transparent focus:border-[#3CB347] transition-all">
+                </div>
+                <div class="space-y-1.5">
+                  <label class="text-[13px] font-semibold text-gray-400 ml-1">Email</label>
+                  <input type="email" placeholder="johndoe@gmail.com"
+                    class="w-full bg-[#F3FBF4] p-4 rounded-[18px] outline-none border border-transparent focus:border-[#3CB347] transition-all">
+                </div>
+                <div class="space-y-1.5">
+                  <label class="text-[13px] font-semibold text-gray-400 ml-1">Phone No</label>
+                  <input type="text" placeholder="+61 2312 132"
+                    class="w-full bg-[#F3FBF4] p-4 rounded-[18px] outline-none border border-transparent focus:border-[#3CB347] transition-all">
+                </div>
+                <div class="space-y-1.5">
+                  <label class="text-[13px] font-semibold text-gray-400 ml-1">Category</label>
+                  <div class="relative">
+                    <select
+                      class="w-full bg-[#F3FBF4] p-4 rounded-[18px] outline-none border border-transparent focus:border-[#3CB347] appearance-none cursor-pointer text-gray-500">
+                      <option>Select</option>
+                    </select>
+                    <span class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none opacity-40">▼</span>
+                  </div>
+                </div>
+                <div class="space-y-1.5">
+                  <label class="text-[13px] font-semibold text-gray-400 ml-1">Organization Name</label>
+                  <input type="text" placeholder="Stitch & Ink"
+                    class="w-full bg-[#F3FBF4] p-4 rounded-[18px] outline-none border border-transparent focus:border-[#3CB347] transition-all">
+                </div>
+              </div>
+
+              <div class="space-y-6">
+                <div class="space-y-1.5">
+                  <label class="text-[13px] font-semibold text-gray-400 ml-1">Do you have a strict delivery
+                    date?</label>
+                  <select
+                    class="w-full bg-[#F3FBF4] p-4 rounded-[18px] outline-none appearance-none cursor-pointer text-gray-500">
+                    <option>Select</option>
+                  </select>
+                </div>
+                <div class="space-y-1.5">
+                  <label class="text-[13px] font-semibold text-gray-400 ml-1">Have you previously worked with Stich &
+                    Ink?</label>
+                  <select
+                    class="w-full bg-[#F3FBF4] p-4 rounded-[18px] outline-none appearance-none cursor-pointer text-gray-500">
+                    <option>Select</option>
+                  </select>
+                </div>
+                <div class="space-y-1.5">
+                  <label class="text-[13px] font-semibold text-gray-400 ml-1">Additional Details</label>
+                  <textarea placeholder="Tell us more..." rows="3"
+                    class="w-full bg-[#F3FBF4] p-4 rounded-[18px] outline-none resize-none border border-transparent focus:border-[#3CB347]"></textarea>
+                </div>
+              </div>
+
+              <button type="submit"
+                class="w-full bg-[#3CB347] text-white py-4 rounded-full font-bold text-lg hover:bg-black transition-all duration-300 shadow-lg shadow-green-100 mt-2">
+                Submit Order
+              </button>
+            </form>
+          </div>
+
+          <div
+            class="w-full lg:w-[45%] bg-[#b7ecc9] rounded-[40px] p-8 md:p-12 flex flex-col justify-center gap-5 relative">
+
+            <div
+              class="bg-white p-4 rounded-[24px] flex items-center justify-between shadow-sm hover:scale-105 transition-all duration-300 w-full max-w-[340px] lg:ml-auto">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-[#D7F6EF] rounded-xl flex items-center justify-center shrink-0">
+                  <img src="./slider1/image.png" class="w-8 h-8 object-contain" alt="Merch Store">
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 leading-tight">Merch Store</h4>
+                  <p class="text-[11px] text-gray-500">Online Stores, Custom Brand</p>
+                </div>
+              </div>
+              <div class="w-8 h-8 bg-[#3CB347] rounded-full flex items-center justify-center">
+                <img src="./icon/Arrow Right Up.png" class="w-4 h-4 invert" alt="arrow">
+              </div>
+            </div>
+
+            <div
+              class="bg-white p-4 rounded-[24px] flex items-center justify-between shadow-sm hover:scale-105 transition-all duration-300 w-full max-w-[340px] lg:mr-auto">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-[#022026] rounded-xl flex items-center justify-center shrink-0">
+                  <img src="./slider1/img-2.png" class="w-8 h-8 object-contain" alt="Bundles">
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 leading-tight">Merch Bundles</h4>
+                  <p class="text-[11px] text-gray-500">Custom Inventory Pre-Purchased</p>
+                </div>
+              </div>
+              <div class="w-8 h-8 bg-[#3CB347] rounded-full flex items-center justify-center">
+                <img src="./icon/Arrow Right Up.png" class="w-4 h-4 invert" alt="arrow">
+              </div>
+            </div>
+
+            <div
+              class="bg-white p-4 rounded-[24px] flex items-center justify-between shadow-sm hover:scale-105 transition-all duration-300 w-full max-w-[340px] lg:ml-auto">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-[#F3FBF4] rounded-xl flex items-center justify-center shrink-0">
+                  <img src="./slider1/img-3.png" class="w-8 h-8 object-contain" alt="Storage">
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 leading-tight">Merch Storage</h4>
+                  <p class="text-[11px] text-gray-500">Warehouse & Fulfillment</p>
+                </div>
+              </div>
+              <div class="w-8 h-8 bg-[#3CB347] rounded-full flex items-center justify-center">
+                <img src="./icon/Arrow Right Up.png" class="w-4 h-4 invert" alt="arrow">
+              </div>
+            </div>
+
+            <div
+              class="bg-white p-4 rounded-[24px] flex items-center justify-between shadow-sm hover:scale-105 transition-all duration-300 w-full max-w-[340px] lg:mr-auto">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-[#3C7A64] rounded-xl flex items-center justify-center shrink-0">
+                  <img src="./slider1/img-4.png" class="w-8 h-8 object-contain" alt="Bulk">
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 leading-tight">Bulk Merch</h4>
+                  <p class="text-[11px] text-gray-500">Volume Discounts Available</p>
+                </div>
+              </div>
+              <div class="w-8 h-8 bg-[#3CB347] rounded-full flex items-center justify-center">
+                <img src="./icon/Arrow Right Up.png" class="w-4 h-4 invert" alt="arrow">
+              </div>
+            </div>
+            <div
+              class="bg-white p-4 rounded-[24px] flex items-center justify-between shadow-sm hover:scale-105 transition-all duration-300 w-full max-w-[340px] lg:ml-auto">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-[#3C7A64] rounded-xl flex items-center justify-center shrink-0">
+                  <img src="./slider1/img-5.png" class="w-8 h-8 object-contain" alt="Bulk">
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 leading-tight">Bulk Merch</h4>
+                  <p class="text-[11px] text-gray-500">Volume Discounts Available</p>
+                </div>
+              </div>
+              <div class="w-8 h-8 bg-[#3CB347] rounded-full flex items-center justify-center">
+                <img src="./icon/Arrow Right Up.png" class="w-4 h-4 invert" alt="arrow">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-16 md:py-24 px-6 border-t border-gray-100">
+      <div class="max-w-[1440px] mx-auto">
+
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
+
+          <div class="col-span-2 lg:col-span-4">
+            <img src="./logo/image.png" alt="Stitch & Ink" class="h-12 mb-6 object-contain">
+            <p class="text-gray-500 leading-relaxed mb-8 max-w-sm text-[15px]">
+              Providing premium custom merchandise solutions. From high-quality hoodies to complete merch storage and
+              fulfillment.
+            </p>
+            <div class="flex gap-5">
+              <a href="#">
+                <img src="./social-icons/facebook.png" alt="facebook">
+              </a>
+              <a href="#">
+                <img src="./social-icons/twitter.png" alt="twitter">
+              </a>
+              <a href="#">
+                <img src="./social-icons/linkdln.png" alt="linkedin">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-span-1 lg:col-span-2">
+            <h5 class="font-bold text-[#1a1a1a] mb-6 uppercase tracking-wider text-xs">Products</h5>
+            <ul class="space-y-4 text-gray-600 text-[14px]">
+              <li><a href="#" class="hover:text-[#3CB347] transition-colors">Hoodies</a></li>
+              <li><a href="#" class="hover:text-[#3CB347] transition-colors">Polos</a></li>
+              <li><a href="#" class="hover:text-[#3CB347] transition-colors">Outerwear</a></li>
+              <li><a href="#" class="hover:text-[#3CB347] transition-colors">T-Shirts</a></li>
+            </ul>
+          </div>
+
+          <div class="col-span-1 lg:col-span-2">
+            <h5 class="font-bold text-[#1a1a1a] mb-6 uppercase tracking-wider text-xs">Solutions</h5>
+            <ul class="space-y-4 text-gray-600 text-[14px]">
+              <li><a href="#" class="hover:text-[#3CB347] transition-colors">Merch Store</a></li>
+              <li><a href="#" class="hover:text-[#3CB347] transition-colors">Bundles</a></li>
+              <li><a href="#" class="hover:text-[#3CB347] transition-colors">Storage</a></li>
+              <li><a href="#" class="hover:text-[#3CB347] transition-colors">Bulk</a></li>
+            </ul>
+          </div>
+
+          <div class="col-span-2 lg:col-span-4 mt-4 lg:mt-0">
+            <h5 class="font-bold text-[#1a1a1a] mb-6 uppercase tracking-wider text-xs">Link Up</h5>
+            <div class="relative w-full max-w-md">
+              <input type="email" placeholder="Your email"
+                class="w-full h-14 px-6 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-[#3CB347] bg-white transition-all shadow-sm" />
+              <button
+                class="absolute right-1.5 top-1.5 bottom-1.5 px-4 md:px-6 bg-[#3CB347] text-white rounded-full text-xs md:text-sm font-bold hover:bg-black transition-all">
+                Subscribe
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <div
+          class="mt-16 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 text-center md:text-left gap-4">
+          <p>© 2026 Stitch & Ink. All rights reserved.</p>
+          <div class="flex gap-6">
+            <a href="#" class="hover:text-[#3CB347]">Terms</a>
+            <a href="#" class="hover:text-[#3CB347]">Privacy</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
