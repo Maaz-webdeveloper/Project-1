@@ -162,7 +162,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 📄 License
 
-This project is created for educational and portfolio purposes.
+This project is created for educational and portfolio purposes. All rights reserved.
 
 ## 👨‍💻 Author
 
