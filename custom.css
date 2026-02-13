@@ -1,19 +1,35 @@
 /* Scrollbar hide (Chrome, Safari, Opera) */
 .no-scrollbar::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* Scrollbar hide (Firefox, Edge, IE) */
 .no-scrollbar {
-    -ms-overflow-style: none; /* IE, Edge */
-    scrollbar-width: none;    /* Firefox */
+  -ms-overflow-style: none; /* IE, Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-  .tab {
-    @apply px-6 py-3 rounded-full font-semibold text-sm whitespace-nowrap
+.tab {
+  @apply px-6 py-3 rounded-full font-semibold text-sm whitespace-nowrap
            text-[#1a1a1a] opacity-70 hover:opacity-100 transition relative;
-  }
+}
 
-  .tab.active {
-    @apply text-[#3CB347] opacity-100;
+.tab.active {
+  @apply text-[#3CB347] opacity-100;
+}
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
   }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.logo:hover {
+  filter: brightness(1) saturate(500%) invert(56%) sepia(82%) saturate(5338%)
+    hue-rotate(99deg);
+}
