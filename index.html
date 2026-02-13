@@ -37,31 +37,49 @@
       <!-- Right -->
       <div class="flex items-center gap-3">
         <!-- Search -->
-        <input class="hidden lg:block w-60 px-4 py-1 text-sm rounded-full bg-green-50 outline-none"
+        <input
+          class="hidden lg:block w-60 px-4 py-2 text-sm rounded-full bg-green-50 outline-none focus:ring-2 focus:ring-green-300 transition"
           placeholder="Search" />
 
         <!-- Button -->
-        <a href="#" class="hidden md:block px-4 py-2 bg-black text-white rounded-full text-sm">
+        <a href="#"
+          class="hidden md:block px-4 py-2 bg-black text-white rounded-full text-sm font-semibold hover:bg-gray-800 transition transform hover:scale-105">
           Start Order
         </a>
 
         <!-- Menu Button -->
-        <button id="menu-btn" class="md:hidden border p-2 rounded">☰</button>
+        <button id="menu-btn" class="md:hidden border p-2 rounded hover:bg-gray-200 transition">
+          ☰
+        </button>
       </div>
+
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden px-4 py-4 space-y-3 border-t">
-      <a href="#">Products</a>
-      <a href="#">Solutions</a>
-      <a href="#">Customers</a>
+    <div id="mobile-menu" class="hidden md:hidden px-4 py-4 space-y-3 border-t bg-white">
+      <!-- Menu Links -->
+      <a href="#" class="block px-4 py-2 rounded-full text-[#1a1a1a] font-medium hover:bg-green-50 transition">
+        Products
+      </a>
+      <a href="#" class="block px-4 py-2 rounded-full text-[#1a1a1a] font-medium hover:bg-green-50 transition">
+        Solutions
+      </a>
+      <a href="#" class="block px-4 py-2 rounded-full text-[#1a1a1a] font-medium hover:bg-green-50 transition">
+        Customers
+      </a>
 
-      <input class="w-full px-4 py-2 bg-green-50 rounded-full" placeholder="Search" />
+      <!-- Search Input -->
+      <input
+        class="w-full px-4 py-2 rounded-full bg-green-50 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-300 transition"
+        placeholder="Search" />
 
-      <a href="#" class="block text-center py-2 bg-black text-white rounded-full">
+      <!-- Start Order Button -->
+      <a href="#"
+        class="block w-full text-center py-3 bg-black text-white rounded-full font-bold hover:bg-gray-800 transition">
         Start Order
       </a>
     </div>
+
   </nav>
 
   <section class="relative mt-20 py-20 px-4 text-center overflow-hidden">
@@ -84,16 +102,20 @@
     </p>
 
     <!-- CTA Buttons -->
-    <div class="mt-10 flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-10">
-      <button class="bg-[#3CB347] text-white px-6 md:px-10 py-4 rounded-full font-bold text-base sm:text-lg md:text-xl">
+    <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 md:gap-10">
+      <!-- Primary Button -->
+      <button
+        class="bg-[#3CB347] text-white px-6 md:px-10 py-4 rounded-full font-bold text-base sm:text-lg md:text-xl shadow-lg hover:bg-[#34a33e] transform hover:scale-105 transition-all w-full sm:w-auto">
         Start an Order
       </button>
 
+      <!-- Secondary Button -->
       <button
-        class="border-2 border-[#34A853] text-[#34A853] px-6 md:px-10 py-4 rounded-full font-bold text-base sm:text-lg md:text-xl hover:bg-green-50 transition">
+        class="border-2 border-[#34A853] text-[#34A853] px-6 md:px-10 py-4 rounded-full font-bold text-base sm:text-lg md:text-xl hover:bg-green-50 hover:text-[#2e8c3c] transform hover:scale-105 transition-all w-full sm:w-auto">
         Schedule a Call
       </button>
     </div>
+
   </section>
 
   <!-- Cards Wrapper -->
@@ -244,24 +266,31 @@
         Explore Brands
       </h2>
 
-      <div class="bg-[#F4FBF7] p-2 rounded-full flex gap-2 overflow-x-auto no-scrollbar max-w-full">
+      <div class="bg-[#F4FBF7] p-2 rounded-full flex gap-2 md:gap-4 lg:gap-6 overflow-x-auto no-scrollbar max-w-full">
+        <!-- Active Tab -->
         <button
-          class="bg-[#3CB347] text-white px-6 md:px-8 py-2.5 rounded-full font-semibold text-sm whitespace-nowrap">
+          class="bg-[#3CB347] text-white px-6 md:px-8 py-2.5 rounded-full font-semibold text-sm whitespace-nowrap shadow-lg transition-all transform hover:scale-105">
           All
         </button>
+
+        <!-- Normal Tabs -->
         <button
-          class="text-[#1a1a1a] px-6 py-2.5 rounded-full font-semibold text-sm opacity-70 hover:opacity-100 whitespace-nowrap">
+          class="bg-white text-[#1a1a1a] px-6 md:px-8 py-2.5 rounded-full font-semibold text-sm whitespace-nowrap shadow-sm transition-all transform hover:bg-[#3CB347] hover:text-white hover:scale-105 hover:shadow-md">
           Best of Companies
         </button>
+
         <button
-          class="text-[#1a1a1a] px-6 py-2.5 rounded-full font-semibold text-sm opacity-70 hover:opacity-100 whitespace-nowrap">
-          College Favourites
+          class="bg-white text-[#1a1a1a] px-6 md:px-8 py-2.5 rounded-full font-semibold text-sm whitespace-nowrap shadow-sm transition-all transform hover:bg-[#3CB347] hover:text-white hover:scale-105 hover:shadow-md">
+          College Favorites
         </button>
+
         <button
-          class="text-[#1a1a1a] px-6 py-2.5 rounded-full font-semibold text-sm opacity-70 hover:opacity-100 whitespace-nowrap">
-          Creators Choice
+          class="bg-white text-[#1a1a1a] px-6 md:px-8 py-2.5 rounded-full font-semibold text-sm whitespace-nowrap shadow-sm transition-all transform hover:bg-[#3CB347] hover:text-white hover:scale-105 hover:shadow-md">
+          Creator Choice
         </button>
       </div>
+
+
     </div>
 
     <div
@@ -304,21 +333,29 @@
   <section class="py-16 bg-white overflow-x-clip">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
       <!-- Heading + Buttons -->
-      <div class="flex flex-col lg:flex-row justify-between items-center text-center lg:text-left mb-16 gap-8">
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-[#1a1a1a] max-w-2xl">
+      <div class="flex flex-col lg:flex-row justify-between items-center text-center lg:text-left mb-16 gap-6 lg:gap-8">
+        <!-- Heading -->
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-[#1a1a1a] max-w-2xl">
           Here's How the <span class="text-[#34A853]">Process</span> Works
         </h2>
-        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+          <!-- Primary -->
           <button
-            class="bg-[#3CB347] text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-green-100 hover:bg-[#34a33e] transition-all w-full sm:w-auto">
+            class="bg-[#3CB347] text-white px-6 sm:px-8 py-3.5 rounded-full font-bold shadow-lg shadow-green-100 hover:bg-[#34a33e] hover:shadow-xl hover:scale-105 transition-all w-full sm:w-auto">
             Start an Order
           </button>
+
+          <!-- Secondary -->
           <button
-            class="text-[#34A853] border-2 border-[#34A853] px-8 py-3.5 rounded-full font-bold hover:bg-[#f0f9f1] transition-all w-full sm:w-auto">
+            class="text-[#34A853] border-2 border-[#34A853] px-6 sm:px-8 py-3.5 rounded-full font-bold hover:bg-green-50 hover:text-[#34A853] hover:shadow-md hover:scale-105 transition-all w-full sm:w-auto">
             Schedule a Call
           </button>
         </div>
       </div>
+
+
 
       <!-- Process Cards Slider -->
       <div id="processSlider"
@@ -424,6 +461,7 @@
   <section class="w-full bg-[#C0E6C4] py-12 rounded-2xl">
     <div
       class="max-w-[1240px] mx-auto px-4 sm:px-6 md:px-10 flex flex-col md:flex-row justify-between items-center gap-6">
+
       <!-- Text -->
       <div class="flex flex-col">
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight tracking-tighter text-[#1a1a1a]">
@@ -438,12 +476,13 @@
       <!-- Button -->
       <div class="mt-6 md:mt-0">
         <button
-          class="bg-[#3CB347] hover:bg-black text-white w-[230px] h-[71px] rounded-full font-bold text-lg flex items-center justify-center shadow-lg shadow-green-900/10 transition-all">
+          class="bg-[#3CB347] hover:bg-black text-white w-[230px] h-[71px] rounded-full font-bold text-lg flex items-center justify-center shadow-lg shadow-green-900/10 hover:shadow-xl transform hover:scale-105 transition-all duration-300">
           Start an Order
         </button>
       </div>
     </div>
   </section>
+
 
   <section class="py-14 px-4 sm:px-6 md:px-10 bg-white font-sans">
     <div class="max-w-7xl mx-auto">
@@ -591,22 +630,36 @@
     <div class="max-w-7xl mx-auto">
       <!-- Heading + Tabs -->
       <div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
+
+        <!-- Heading -->
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a1a1a] text-center md:text-left">
           How We <span class="text-[#3CB347]">Help</span> Our<br />Customers
         </h2>
 
+        <!-- Tabs -->
         <div class="bg-white p-2 rounded-full shadow-sm flex items-center gap-2">
-          <button class="bg-[#3CB347] text-white px-6 py-2 rounded-full font-medium transition">
+
+          <!-- Active Tab -->
+          <button
+            class="bg-[#3CB347] text-white px-6 py-2 rounded-full font-medium shadow-md transition-all duration-300">
             Companies
           </button>
-          <button class="text-gray-600 px-6 py-2 rounded-full font-medium hover:bg-gray-50 transition">
+
+          <!-- Normal Tab -->
+          <button
+            class="text-gray-600 px-6 py-2 rounded-full font-medium hover:bg-[#3CB347] hover:text-white hover:shadow-md transition-all duration-300">
             Creators
           </button>
-          <button class="text-gray-600 px-6 py-2 rounded-full font-medium hover:bg-gray-50 transition">
+
+          <!-- Normal Tab -->
+          <button
+            class="text-gray-600 px-6 py-2 rounded-full font-medium hover:bg-[#3CB347] hover:text-white hover:shadow-md transition-all duration-300">
             Collegiate
           </button>
+
         </div>
       </div>
+
 
       <!-- Main Content Grid -->
       <div class="bg-[#022026] rounded-[40px] overflow-hidden grid grid-cols-1 lg:grid-cols-2 shadow-2xl gap-0">
@@ -710,12 +763,17 @@
         </div>
 
         <!-- Button -->
-        <div class="flex-shrink-0">
-          <button
-            class="bg-[#3CB347] hover:opacity-90 text-white w-full sm:w-[230px] h-[60px] sm:h-[71px] rounded-full font-bold text-lg sm:text-[20px] shadow-lg shadow-green-200 transition-all">
+        <div class="flex-shrink-0 w-full sm:w-auto">
+          <button class="bg-[#3CB347] text-white w-full sm:w-[230px] h-[60px] sm:h-[71px] 
+           rounded-full font-bold text-lg sm:text-[20px] 
+           shadow-lg shadow-green-200 
+           hover:bg-[#2fa13d] hover:shadow-xl hover:scale-105 
+           active:scale-95 
+           transition-all duration-300 ease-in-out">
             Start an Order
           </button>
         </div>
+
       </div>
 
       <!-- Perks Grid -->
@@ -859,51 +917,39 @@
     </div>
   </section>
 
-  <section class="py-16 px-6 bg-white sticky top-0 z-40">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-      <!-- Heading -->
-      <h2 class="text-3xl md:text-[50px] font-bold text-[#1a1a1a] tracking-tight">
+  <section class=" max-w-7xl py-10 bg-white w-full mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-9 mb-10 px-4 sm:px-6 md:px-10">
+      <h2 class="text-3xl sm:text-4xl md:text-[50px] font-bold text-[#1a1a1a] leading-tight text-center md:text-left">
         Explore Brands
       </h2>
 
-      <!-- Tabs Wrapper -->
-      <div class="relative w-full md:w-auto">
-        <!-- LEFT ARROW -->
-        <div class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-[#F4FBF7] pl-2">
-          <span class="text-xl font-bold cursor-pointer select-none">‹</span>
-        </div>
+      <div class="bg-[#F4FBF7] p-2 rounded-full flex gap-2 md:gap-4 lg:gap-6 overflow-x-auto no-scrollbar max-w-full">
+        <!-- Active Tab -->
+        <button
+          class="bg-[#3CB347] text-white px-6 md:px-8 py-2.5 rounded-full font-semibold text-sm whitespace-nowrap shadow-lg transition-all transform hover:scale-105">
+          All
+        </button>
 
-        <!-- Tabs -->
-        <div
-          class="flex items-center gap-2 overflow-x-auto no-scrollbar bg-[#F4FBF7] p-2 rounded-full scroll-smooth px-10">
-          <!-- ACTIVE TAB -->
-          <button class="bg-[#3CB347] text-white px-8 py-3 rounded-full font-semibold text-sm whitespace-nowrap shadow">
-            All
-          </button>
+        <!-- Normal Tabs -->
+        <button
+          class="bg-white text-[#1a1a1a] px-6 md:px-8 py-2.5 rounded-full font-semibold text-sm whitespace-nowrap shadow-sm transition-all transform hover:bg-[#3CB347] hover:text-white hover:scale-105 hover:shadow-md">
+          Best of Companies
+        </button>
 
-          <!-- NORMAL TABS -->
-          <button
-            class="px-6 py-3 rounded-full font-semibold text-sm text-[#1a1a1a] opacity-70 hover:opacity-100 hover:bg-white transition whitespace-nowrap">
-            Best of Companies
-          </button>
+        <button
+          class="bg-white text-[#1a1a1a] px-6 md:px-8 py-2.5 rounded-full font-semibold text-sm whitespace-nowrap shadow-sm transition-all transform hover:bg-[#3CB347] hover:text-white hover:scale-105 hover:shadow-md">
+          College Favorites
+        </button>
 
-          <button
-            class="px-6 py-3 rounded-full font-semibold text-sm text-[#1a1a1a] opacity-70 hover:opacity-100 hover:bg-white transition whitespace-nowrap">
-            College Favourites
-          </button>
-
-          <button
-            class="px-6 py-3 rounded-full font-semibold text-sm text-[#1a1a1a] opacity-70 hover:opacity-100 hover:bg-white transition whitespace-nowrap">
-            Creators Choice
-          </button>
-        </div>
-
-        <!-- RIGHT ARROW -->
-        <div class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-[#F4FBF7] pr-2">
-          <span class="text-xl font-bold cursor-pointer select-none">›</span>
-        </div>
+        <button
+          class="bg-white text-[#1a1a1a] px-6 md:px-8 py-2.5 rounded-full font-semibold text-sm whitespace-nowrap shadow-sm transition-all transform hover:bg-[#3CB347] hover:text-white hover:scale-105 hover:shadow-md">
+          Creator Choice
+        </button>
       </div>
+
+
     </div>
+
   </section>
   <section class="py-12 md:py-20 bg-white">
     <div class="max-w-[1440px] mx-auto px-6 md:px-10">
@@ -1177,15 +1223,26 @@
                   class="w-full bg-[#F3FBF4] p-4 rounded-[18px] outline-none border border-transparent focus:border-[#3CB347] transition-all" />
               </div>
               <div class="space-y-1.5">
-                <label class="text-[13px] font-semibold text-gray-400 ml-1">Category</label>
+                <label class="text-[13px] font-semibold text-gray-400 ml-1">
+                  Category
+                </label>
+
                 <div class="relative">
                   <select
-                    class="w-full bg-[#F3FBF4] p-4 rounded-[18px] outline-none border border-transparent focus:border-[#3CB347] appearance-none cursor-pointer text-gray-500">
-                    <option>Select</option>
+                    class="w-full bg-[#F3FBF4] p-4 pr-10 rounded-[18px] outline-none border border-transparent focus:border-[#3CB347] appearance-none cursor-pointer text-gray-600">
+                    <option disabled selected>Select Category</option>
+                    <option>T-Shirts</option>
+                    <option>Hoodies</option>
+                    <option>Caps</option>
                   </select>
-                  <span class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none opacity-40">▼</span>
+
+                  <span class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-gray-400">
+                    ▼
+                  </span>
                 </div>
+
               </div>
+
               <div class="space-y-1.5">
                 <label class="text-[13px] font-semibold text-gray-400 ml-1">Organization Name</label>
                 <input type="text" placeholder="Stitch & Ink"
@@ -1195,20 +1252,42 @@
 
             <div class="space-y-6">
               <div class="space-y-1.5">
-                <label class="text-[13px] font-semibold text-gray-400 ml-1">Do you have a strict delivery date?</label>
-                <select
-                  class="w-full bg-[#F3FBF4] p-4 rounded-[18px] outline-none appearance-none cursor-pointer text-gray-500">
-                  <option>Select</option>
-                </select>
+                <label class="text-[13px] font-semibold text-gray-400 ml-1">
+                  Do you have a strict delivery date?
+                </label>
+
+                <div class="relative">
+                  <input id="deliveryDate" type="date"
+                    class="w-full bg-[#F3FBF4] p-4 pr-12 rounded-[18px] outline-none border border-transparent focus:border-[#3CB347] cursor-pointer text-gray-600 appearance-none" />
+                  <!-- Custom Arrow -->
+                  <button type="button" onclick="document.getElementById('deliveryDate').showPicker()"
+                    class="absolute inset-y-0 right-4 flex items-center text-gray-400">
+                    ▼
+                  </button>
+                </div>
               </div>
               <div class="space-y-1.5">
-                <label class="text-[13px] font-semibold text-gray-400 ml-1">Have you previously worked with Stich &
-                  Ink?</label>
-                <select
-                  class="w-full bg-[#F3FBF4] p-4 rounded-[18px] outline-none appearance-none cursor-pointer text-gray-500">
-                  <option>Select</option>
-                </select>
+                <label class="text-[13px] font-semibold text-gray-400 ml-1">
+                  Have you previously worked with Stitch & Ink?
+                </label>
+
+                <div class="relative">
+                  <select
+                    class="w-full bg-[#F3FBF4] p-4 pr-10 rounded-[18px] outline-none border border-transparent focus:border-[#3CB347] appearance-none cursor-pointer text-gray-600">
+
+                    <option disabled selected>Select Option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+
+                  </select>
+
+                  <!-- Custom Arrow -->
+                  <span class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-gray-400">
+                    ▼
+                  </span>
+                </div>
               </div>
+
               <div class="space-y-1.5">
                 <label class="text-[13px] font-semibold text-gray-400 ml-1">Additional Details</label>
                 <textarea placeholder="Tell us more..." rows="3"
@@ -1216,10 +1295,15 @@
               </div>
             </div>
 
-            <button type="submit"
-              class="w-full bg-[#3CB347] text-white py-4 rounded-full font-bold text-lg hover:bg-black transition-all duration-300 shadow-lg shadow-green-100 mt-2">
+            <button type="submit" class="w-full bg-[#3CB347] text-white py-4 rounded-full font-bold text-lg
+         shadow-lg shadow-green-100 mt-2
+         hover:bg-black hover:shadow-xl hover:scale-[1.02]
+         active:scale-95
+         focus:outline-none focus:ring-2 focus:ring-[#3CB347] focus:ring-offset-2
+         transition-all duration-300 ease-in-out">
               Submit Order
             </button>
+
           </form>
         </div>
 
