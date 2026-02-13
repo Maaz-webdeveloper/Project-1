@@ -33,3 +33,18 @@
   filter: brightness(1) saturate(500%) invert(56%) sepia(82%) saturate(5338%)
     hue-rotate(99deg);
 }
+.logos-wrapper {
+  display: flex;
+  width: max-content;
+  gap: 2.5rem; /* same as Tailwind gap-10 */
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  } /* Adjust according to repeated logos */
+}
